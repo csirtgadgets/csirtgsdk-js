@@ -6,11 +6,11 @@ The Software Development Kit (SDK) for Javascript contains library code and exam
 # Examples
 ## Client
 ```javascript
-<script type="text/javascript" src="csirtg.js"></script>
+<script type="text/javascript" src="csirtgsdk.js"></script>
 
 <script type="text/javascript" charset="utf-8">
 
-    var cli = new CSIRTGSDK({token: "1234", q: "example.com"});
+    var cli = new CSIRTGSDK({user: 'wes', token: "1234", q: "example.com"});
     cli.search(function(err, success) {
         if (err) {
             throw err;
